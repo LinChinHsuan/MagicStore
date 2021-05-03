@@ -1,0 +1,102 @@
+//variables
+
+$theme-color : #E66343;
+$theme-color-secondary :#e1e5f2;
+$theme-color-warning: #FFE180;
+$section-text-color : #62595A;
+
+//utilities
+//text
+.text-theme-color {
+    color: $theme-color;
+    &:hover {
+        color: $theme-color;
+    }
+    &-secondary {
+        color: $theme-color-secondary;
+        &-lg {
+            color: $theme-color;
+            @media (min-width:992px) {
+                color: white;
+            }
+        }
+    }
+    &-section {
+        color: $section-text-color;
+    }
+}
+.text-vertical {
+    -webkit-writing-mode: vertical-rl;
+    writing-mode: vertical-rl;
+}
+//background
+.bg-theme-color {
+    background-color: $theme-color;
+    &-lg {
+        background-color: transparent;
+        @media (min-width:992px) {
+            background-color: $theme-color;
+        }
+    }
+}
+.bg-theme-color-secondary {
+    background-color: $theme-color-secondary;
+}
+.bg-theme-color-warning {
+    background-color: $theme-color-warning;
+}
+.bg-transparent-lg {
+    @media (min-width:992px) {
+        background-color: transparent;
+    }
+}
+.bg-cover {
+    background-size: cover;
+    background-position: center center;
+}
+//list
+.list-style-none {
+    list-style: none;
+}
+
+//spacing
+.mt-246 {
+    margin-top: 246px;
+}
+.mb-30 {
+    margin-bottom: 30px;
+}
+.h-420 {
+    height: auto;
+    @media (min-width:992px) {
+        height: 420px;
+    }
+}
+.h-60 {
+    height: 60px;
+}
+.h-30 {
+    height: 30px;
+}
+.py-lg-70 {
+    padding: 30px;
+    @media (min-width:992px) {
+        padding: 70px 0;
+    }
+}
+.px-30 {
+    padding: 0 30px;
+}
+
+//base
+a:hover {
+    text-decoration: none;
+}
+.form-control {
+    border: none;
+    &:focus {
+        background-color: $theme-color-secondary;
+        border: none;
+        box-shadow: none;
+    }
+}

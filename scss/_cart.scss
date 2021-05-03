@@ -1,0 +1,36 @@
+.border-b {
+    @media (min-width:992px) {
+        border-bottom:1px solid $theme-color-secondary;
+    }
+}
+.counter {
+    &-item{
+        color: $theme-color;
+        height: 48px;
+        width: 48px;
+        text-align: center;
+        line-height: 46px;
+        a {
+            display: block;
+            color: $theme-color;
+        }
+        border: 1px solid $theme-color-secondary;
+    }
+}
+.border-y {
+    border-top: 1px solid $theme-color-secondary;
+    border-bottom: 1px solid $theme-color-secondary;
+}
+.itemImg {
+    max-width: 157px;
+    height: 110px;
+    @media (min-width:768px) {
+        width: 110px;
+    }
+}
+.img-md {
+    width: 157px;
+    @media (min-width:768px) {
+        width: 110px;
+    }
+}

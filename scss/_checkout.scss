@@ -1,0 +1,51 @@
+.break-btn-checkout {
+    height: 65px;
+}
+.border-outside {
+    border: 1px solid $theme-color-secondary;
+}
+.no-gutters-onlymd {
+    padding-left: 0;
+    padding-right: 0;
+    .row {
+        margin-left: 0;
+        margin-right: 0;
+        .col-md-6 {
+            padding-left: 0;
+            padding-right: 0;
+        }
+    }
+    @media (min-width:768px) {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+}
+.lineBox {
+    height: 2px;
+    width: 100%;
+    background-color: white;
+}
+
+//2
+
+.credit-card-position {
+    bottom: 11px;
+    right: 20px;
+}
+
+//3
+.btn-group-checkout3 {
+    .btn {
+        color: white;
+        border: 1px solid white;
+        &.active {
+            color: $theme-color;
+            background-color: white;
+        }
+    }
+}
+
+//success
+.bg-lineBox-success {
+    background-color: $theme-color;
+}
