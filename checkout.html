@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>甜點電商</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
+        integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/all.css">
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-md navbar-light bg-white">
+        <div class="container-md d-flex align-items-center w-100">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <a class="navbar-brand d-none d-md-block" href="#">
+                <h1 class="navbar-brand-logo mb-0">MagicStore</h1>
+            </a>
+            <a class="navbar-brand d-md-none mx-auto" href="#">
+                <h1 class="navbar-brand-logo mb-0">MagicStore</h1>
+            </a>
+            <a class="text-theme-color px-3 order-md-1" href="cart.html">
+                <i class="fas fa-shopping-cart"></i>
+            </a>
+            <div class="collapse navbar-collapse flex-grow-0 ml-auto" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link px-3" href="index.html">首頁</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link px-3" href="product.html">道具</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link px-3" href="login.html">登入</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <div class="container-md my-0 my-md-5 no-gutters-onlymd">
+        <div class="row justify-content-center align-items-stretch">
+            <div class="col-md-6">
+                <div class="bg-theme-color text-white pt-5">
+                    <div class="d-flex mb-4 pr-5">
+                        <h2 class="pl-5 mb-0">運送</h2>
+                        <div class="position-relative ml-auto w-50">
+                            <div class="d-flex h-100 justify-content-between align-items-center">
+                                <i class="far fa-dot-circle"></i>
+                                <div class="lineBox"></div>
+                                <i class="far fa-circle"></i>
+                                <div class="lineBox"></div>
+                                <i class="far fa-circle"></i>
+                            </div>
+                        </div>
+                    </div>
+
+                    <form class="needs-validation" novalidate>
+                        <div class="form-row px-5">
+                            <div class="col-6 mb-3">
+                                <label for="validationCustom01">姓氏</label>
+                                <input type="text" class="form-control rounded-0 bg-white"
+                                    id="validationCustom01" placeholder="王" required>
+                                <div class="valid-feedback">
+                                    Looks good!
+                                </div>
+                            </div>
+                            <div class="col-6 mb-3">
+                                <label for="validationCustom02">名字</label>
+                                <input type="text" class="form-control rounded-0 bg-white"
+                                    id="validationCustom02" placeholder="小明" required>
+                                <div class="valid-feedback">
+                                    Looks good!
+                                </div>
+                            </div>
+                            <div class="col-12">
+                                <label for="validationCustom03">電話</label>
+                                <input type="tel" class="form-control rounded-0 bg-white"
+                                    id="validationCustom03" placeholder="0912-345-678" required>
+                                <div class="valid-feedback">
+                                    Looks good!
+                                </div>
+                            </div>
+                        </div>
+                        <p class="h4 mt-3 px-5">地址</p>
+                        <div class="form-row px-5 mb-4">
+                            <div class="col-6 mb-3">
+                                <select class="custom-select rounded-0 bg-white" id="validationCustom04"
+                                    required>
+                                    <option selected disabled>--城市--</option>
+                                    <option value="桃園市">桃園市</option>
+                                    <option value="高雄市">高雄市</option>
+                                    <option value="台北市">台北市</option>
+                                </select>
+                                <div class="invalid-feedback">
+                                    Please provide a valid city.
+                                </div>
+                            </div>
+                            <div class="col-6 mb-3">
+                                <select class="custom-select rounded-0 bg-white" id="validationCustom04"
+                                    required>
+                                    <option selected disabled>--鄉鎮市區--</option>
+                                    <option value="中壢區">中壢區</option>
+                                    <option value="平鎮區">平鎮區</option>
+                                </select>
+                                <div class="invalid-feedback">
+                                    Please select a valid state.
+                                </div>
+                            </div>
+                            <div class="col-md-12 mb-3">
+                                <input type="text" class="form-control rounded-0 bg-white"
+                                    id="validationCustom04" placeholder="幸福路 520 號" required>
+                                <div class="invalid-feedback">
+                                    Please provide a valid city.
+                                </div>
+                            </div>
+                        </div>
+                        <button class="btn btn-block break-btn-checkout bg-theme-color-warning rounded-0" type="submit">
+                            <span class="text-theme-color h4">下一步</span>
+                        </button>
+                    </form>
+
+                </div>
+            </div>
+            <div class="col-5 col-lg-4 d-none d-md-block">
+                <table class="table table-borderless border-outside text-theme-color-section">
+                    <thead class="bg-theme-color-secondary">
+                        <tr class="border-b">
+                            <th colspan="4" class="text-center h4">訂單摘要</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td class="pb-0">小計</td>
+                            <td colspan="3" class="text-right pb-0">NT$ 2,660</td>
+                        </tr>
+                        <tr>
+                            <td class="pt-0">運費</td>
+                            <td colspan="3" class="text-right pt-0">NT$ 60</td>
+                        </tr>
+                        <tr class="h5">
+                            <td>總計</td>
+                            <td colspan="3" class="text-right">NT$ 2,720</td>
+                        </tr>
+                    </tbody>
+                </table>
+                <table class="table table-borderless border-outside text-theme-color-section">
+                    <thead class="bg-theme-color-secondary">
+                        <tr class="border-b">
+                            <th colspan="4" class="text-center h4">購物清單</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td width="110">
+                                <div class="itemImg bg-cover" style="background-image: url('../images/card3.jpg');"></div>
+                            </td>
+                            <td>
+                                <p class="my-3">單車牌（紅）</p>
+                                <p class="h5">NT$ 160</p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td width="110">
+                                <div class="itemImg bg-cover" style="background-image: url('../images/card4.jpg');"></div>
+                            </td>
+                            <td>
+                                <p class="my-3">精緻花紋牌</p>
+                                <p class="h5">NT$ 700</p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td width="110">
+                                <div class="itemImg bg-cover" style="background-image: url('../images/boy.jpg');"></div>
+                            </td>
+                            <td>
+                                <p class="my-3">兒童道具組</p>
+                                <p class="h5">NT$ 1800</p>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+    <div class="bg-theme-color">
+        <div class="container">
+            <div class="row py-5 px-2 px-sm-5 justify-content-between">
+                <div class="col-lg-5 d-flex align-items-center justify-content-center justify-content-lg-start">
+                    <img width="40" src="images/logo.png" alt="logo">
+                    <p class="text-white ml-3 mb-0 h4">訂閱你我的每日魔法</p>
+                </div>
+                <div class="col-lg-5 mt-3 mt-lg-0">
+                    <div class="input-group ">
+                        <div class="input-group-prepend bg-white p-2">
+                            <i class="fas fa-envelope text-theme-color mt-1 ml-1"></i>
+                        </div>
+                        <input type="text" class="form-control bg-white rounded-0">
+                        <div class="input-group-append">
+                            <button class="btn bg-theme-color-warning rounded-0" type="button" id="button-addon2">
+                                <i class="fas fa-arrow-right text-theme-color"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer class="bg-theme-color-secondary">
+        <div class="container p-5 text-theme-color">
+            <div class="row mt-md-3">
+                <div class="col-md-5 d-flex flex-column justify-content-between">
+                    <img class="mt-md-0 my-5" width="171" src="images/logotype-sm.svg" alt="logo">
+                    <p>
+                        07-1234-5678
+                        <br>
+                        magicstore@email.com
+                        <br>
+                        800 高雄市新興區幸福路 520 號
+                    </p>
+                </div>
+                <div class="col-md-7 text-right d-none d-md-block">
+                    <img width="60" src="images/sm-今天是個變魔術的好日子.png" alt="今天是個變魔術的好日子">
+                </div>
+            </div>
+            <div class="row justify-content-between align-items-end">
+                <div class="col-md-5">
+                    <div class="my-3">
+                        <a href="#"><i class="fab fa-facebook-square fa-2x text-theme-color"></i></a>
+                        <a href="#"><i class="fab fa-twitter-square fa-2x text-theme-color"></i></a>
+                        <a href="#"><i class="fab fa-linkedin fa-2x text-theme-color"></i></a>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <p class="text-md-right mb-0">© 2021 MagicStore All Rights Reserved</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+        integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.min.js"
+        integrity="sha384-+YQ4JLhjyBLPDQt//I+STsc9iw4uQqACwlvpslubQzn4u2UU2UFM80nGisd026JF"
+        crossorigin="anonymous"></script>
+    <script>
+        // Example starter JavaScript for disabling form submissions if there are invalid fields
+        (function () {
+            'use strict';
+            window.addEventListener('load', function () {
+                // Fetch all the forms we want to apply custom Bootstrap validation styles to
+                var forms = document.getElementsByClassName('needs-validation');
+                // Loop over them and prevent submission
+                var validation = Array.prototype.filter.call(forms, function (form) {
+                    form.addEventListener('submit', function (event) {
+                        if (form.checkValidity() === false) {
+                            event.preventDefault();
+                            event.stopPropagation();
+                        }
+                        form.classList.add('was-validated');
+                    }, false);
+                });
+            }, false);
+        })();
+    </script>
+</body>
+
+</html>
